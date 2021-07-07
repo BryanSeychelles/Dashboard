@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Spring Boot User Authentication</title>
+</head>
+<body>
+<h1>SIGN IN</h1>
+<form role="form" th:action="@{/sign-in}" th:method="post">
+    <lable>Username</lable>
+    <input type="text" id="username" name="username">
+
+    <lable>Password</lable>
+    <input type="password" id="password" name="password">
+
+    <input type="submit">
+</form>
+<div>
+    <div>
+      With GitHub: <a href="/oauth2/authorization/github">click here</a>
+    </div>
+    <div>
+      With Google: <a href="/oauth2/authorization/google">click here</a>
+    </div>
+</div>
+</body>
+</html>
